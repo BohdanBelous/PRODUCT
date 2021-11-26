@@ -1,7 +1,7 @@
 /* ---FOOTER------------------------------------------------------------ */
 // ---VARIABLES----
-$main_color: #02897a;
-$text_color: #22343d;
+$main_color:#02897A;
+$text_color:#22343D;
 
 //------------------------------
 .footer {
@@ -35,7 +35,7 @@ $text_color: #22343d;
 }
 
 .logo-footer__text {
-  color: #173a56;
+  color: #173A56;
   font-weight: bold;
   font-size: 28px;
   margin: 0 0 0 15px;
@@ -53,8 +53,8 @@ $text_color: #22343d;
   align-items: center;
   width: 40px;
   height: 40px;
-  background: #edfffc;
-  border: 2px solid #edfffc;
+  background: #EDFFFC;
+  border: 2px solid #EDFFFC;
   border-radius: 50%;
   transition: all 0.3s ease 0s;
 
@@ -71,7 +71,7 @@ $text_color: #22343d;
 .footer__label {
   font-weight: 500;
   font-size: 20px;
-  line-height: 30/20 * 100%;
+  line-height: 30/20*100%;
 
   br {
     display: none;
@@ -85,7 +85,7 @@ $text_color: #22343d;
 .menu-footer__link {
   a {
     font-size: 16px;
-    line-height: 35/16 * 100%;
+    line-height: 35/16*100%;
     color: $text_color;
     transition: all 0.3s ease 0s;
 
@@ -106,7 +106,7 @@ $text_color: #22343d;
 .footer__input {
   padding: 9px 15px;
   font-size: 16px;
-  line-height: 35/16 * 100%;
+  line-height: 35/16*100%;
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
 
   &:focus {
@@ -119,9 +119,9 @@ $text_color: #22343d;
   padding: 6.5px;
   width: 131.12px;
   font-size: 16px;
-  line-height: 24/16 * 100%;
+  line-height: 24/16*100%;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   background: $main_color;
   border: 1px solid $main_color;
   border-radius: 4px;
@@ -138,10 +138,10 @@ $text_color: #22343d;
   margin: 15px 15px 0;
   text-align: center;
   font-size: 16px;
-  line-height: 30/16 * 100%;
+  line-height: 30/16*100%;
 }
 
-@media (min-width: 1140px) {
+@media(min-width:1140px) {
   .footer__container {
     justify-content: flex-start;
   }
@@ -168,13 +168,15 @@ $text_color: #22343d;
   }
 
   .footer__label {
+
     br {
       display: inline;
     }
   }
+
 }
 
-@media (max-width: 954px) {
+@media(max-width:954px) {
   .footer {
     padding: 70px 0 20px 0;
   }
@@ -187,6 +189,7 @@ $text_color: #22343d;
     &:nth-child(1) {
       flex: 0 1 100%;
       order: 4;
+
     }
 
     &:nth-child(2) {
@@ -229,12 +232,14 @@ $text_color: #22343d;
   }
 }
 
-@media (max-width: 650px) {
+@media(max-width:650px) {
   .footer {
     padding: 40px 0 10px 0;
   }
 
   .footer__column {
+
+
     &:nth-child(2) {
       padding: 0;
     }
@@ -242,6 +247,7 @@ $text_color: #22343d;
     &:nth-child(3) {
       padding: 0;
     }
+
   }
 
   .footer__label {
@@ -251,7 +257,6 @@ $text_color: #22343d;
   .footer__input {
     padding: 5px;
     min-width: 75%;
-    font-size: 12px;
   }
 
   .footer__button {
@@ -259,7 +264,7 @@ $text_color: #22343d;
   }
 }
 
-@media (max-width: 420px) {
+@media(max-width:420px) {
   .menu-footer__link {
     a {
       font-size: 14px;
