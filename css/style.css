@@ -458,7 +458,7 @@ h6 {
   line-height: 187.5%;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1140px) {
   .footer__container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
