@@ -1,0 +1,277 @@
+/* ---FOOTER------------------------------------------------------------ */
+// ---VARIABLES----
+$main_color:#02897A;
+$text_color:#22343D;
+
+//------------------------------
+.footer {
+  padding: 155px 0 40px;
+  color: $text_color;
+}
+
+.footer__container {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 0px auto;
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__column {
+  flex: 0 1 25%;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.logo-footer__text {
+  color: #173A56;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 0 0 0 15px;
+}
+
+.footer__social {
+  margin: 25px 0 0 0;
+  display: flex;
+}
+
+.social__link {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #EDFFFC;
+  border: 2px solid #EDFFFC;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    border-color: $main_color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &:not(:last-child) {
+    margin: 0 16px 0 0;
+  }
+}
+
+.footer__label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30/20*100%;
+
+  br {
+    display: none;
+  }
+}
+
+.footer__menu {
+  margin: 10px 0 0 0;
+}
+
+.menu-footer__link {
+  a {
+    font-size: 16px;
+    line-height: 35/16*100%;
+    color: $text_color;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      text-decoration: underline;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+}
+
+.footer__form {
+  margin: 35px 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__input {
+  padding: 9px 15px;
+  font-size: 16px;
+  line-height: 35/16*100%;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+
+  &:focus {
+    color: $main_color;
+  }
+}
+
+.footer__button {
+  margin: 21px 0 0 0;
+  padding: 6.5px;
+  width: 131.12px;
+  font-size: 16px;
+  line-height: 24/16*100%;
+  text-align: center;
+  color: #FFFFFF;
+  background: $main_color;
+  border: 1px solid $main_color;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background: transparent;
+    color: $main_color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.footer__copy {
+  margin: 15px 15px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30/16*100%;
+}
+
+@media(min-width:1110px) {
+  .footer__container {
+    justify-content: flex-start;
+  }
+
+  .footer__column {
+    &:nth-child(1) {
+      flex: 0 1 163px;
+    }
+
+    &:nth-child(2) {
+      flex: 0 1 150px;
+      margin: 0 0 0 170px;
+    }
+
+    &:nth-child(3) {
+      flex: 0 1 150px;
+      margin: 0 0 0 100px;
+    }
+
+    &:nth-child(4) {
+      flex: 0 1 325px;
+      margin: 0 0 0 52px;
+    }
+  }
+
+  .footer__label {
+
+    br {
+      display: inline;
+    }
+  }
+
+}
+
+@media(max-width:954px) {
+  .footer {
+    padding: 70px 0 20px 0;
+  }
+
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-child(1) {
+      flex: 0 1 100%;
+      order: 4;
+
+    }
+
+    &:nth-child(2) {
+      order: 1;
+      flex: 0 1 50%;
+      margin: 0 0 35px;
+      align-items: flex-start;
+      padding: 0 0 0 18%;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+      flex: 0 1 50%;
+      margin: 0 0 35px;
+      align-items: flex-start;
+      padding: 0 0 0 18%;
+    }
+
+    &:nth-child(4) {
+      order: 3;
+      flex: 0 1 100%;
+      margin: 0 0 35px;
+    }
+  }
+
+  .footer__form {
+    margin: 15px 0 0 0;
+    align-items: center;
+  }
+
+  .footer__input {
+    min-width: 300px;
+    height: 50px;
+  }
+
+  .footer__button {
+    margin: 15px 0 0 0;
+    min-width: 300px;
+    height: 50px;
+  }
+}
+
+@media(max-width:650px) {
+  .footer {
+    padding: 40px 0 10px 0;
+  }
+
+  .footer__column {
+
+
+    &:nth-child(2) {
+      padding: 0;
+    }
+
+    &:nth-child(3) {
+      padding: 0;
+    }
+
+  }
+
+  .footer__label {
+    text-align: center;
+  }
+
+  .footer__input {
+    padding: 5px;
+    min-width: 75%;
+  }
+
+  .footer__button {
+    min-width: 75%;
+  }
+}
+
+@media(max-width:420px) {
+  .menu-footer__link {
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .footer__copy {
+    font-size: 14px;
+  }
+}
